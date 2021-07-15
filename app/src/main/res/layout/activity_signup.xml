@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context=".signup">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/logo3"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aladin"
+                android:layout_marginTop="30dp"
+                android:text="SignUp"
+                android:textColor="@color/text"
+                android:textSize="36dp" />
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginBottom="25dp"
+            app:cardBackgroundColor="#FFF8E1"
+            app:cardCornerRadius="60dp"
+            app:cardElevation="8dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/nameSignupTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/aladin"
+                    android:text="Name"
+                    android:textColor="@color/text"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/nameSignupEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nameSignupTxt"
+                    android:layout_marginHorizontal="20dp"
+                    android:fontFamily="@font/aladin"
+                    android:hint="Enter Your Name"
+                    android:inputType="text"
+                    android:textColor="@color/text"
+                    android:textColorHint="#B0A392"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/usernameSignupTxt"
+                    android:layout_below="@id/nameSignupEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/aladin"
+                    android:text="Username"
+                    android:textColor="@color/text"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/usernameSignupEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/usernameSignupTxt"
+                    android:layout_marginHorizontal="20dp"
+                    android:fontFamily="@font/aladin"
+                    android:hint="Enter Username"
+                    android:inputType="text"
+                    android:textColor="@color/text"
+                    android:textColorHint="#B0A392"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/emailSignUpTxt"
+                    android:layout_below="@id/usernameSignupEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/aladin"
+                    android:text="Email ID"
+                    android:textColor="@color/text"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/emailSignUpIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/emailSignUpTxt"
+                    android:layout_marginHorizontal="20dp"
+                    android:fontFamily="@font/aladin"
+                    android:hint="Enter Email ID"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/text"
+                    android:textColorHint="#B0A392"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/passwordSignupTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/emailSignUpIn"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/aladin"
+                    android:text="Password"
+                    android:textColor="@color/text"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/passwordSignupIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/passwordSignupTxt"
+                    android:layout_marginHorizontal="20dp"
+                    android:fontFamily="@font/aladin"
+                    android:hint="Enter Password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/text"
+                    android:textColorHint="#B0A392"
+                    android:textSize="24dp" />
+
+
+
+
+                <Button
+                    android:id="@+id/signupBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/passwordSignupIn"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/button_shape"
+                    android:backgroundTint="@color/text"
+                    android:fontFamily="@font/aladin"
+                    android:text="signup"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF8E1"
+                    android:textSize="24dp" />
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foregroundTint="@color/text"
+                    android:indeterminateTint="@color/text"
+                    android:progressTint="@color/text"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

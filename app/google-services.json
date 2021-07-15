@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "49266484173",
+    "project_id": "roam-44f2a",
+    "storage_bucket": "roam-44f2a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49266484173:android:e127847d2fa1a7ab381a84",
+        "android_client_info": {
+          "package_name": "com.example.projecttravel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "49266484173-bi7hiesf9c6ugnap8rvdc1ogk6qso7qg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWO8OQq09X8a0ixZ8q2-ZBg0Vbqkgab7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "49266484173-bi7hiesf9c6ugnap8rvdc1ogk6qso7qg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

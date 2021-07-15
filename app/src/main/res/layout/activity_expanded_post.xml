@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".expanded_post">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        android:id="@+id/deleteBtn"
+        />
+
+        <ImageView
+            android:layout_margin="15dp"
+            android:elevation="5dp"
+            android:id="@+id/addPostImage"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/lineq"
+                android:layout_margin="15dp"
+                android:layout_width="320dp"
+                android:layout_height="2dp"
+                android:background="#E91E63"
+                />
+            <TextView
+                android:layout_below="@+id/lineq"
+                android:id="@+id/titleTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_light"
+                android:layout_margin="15dp"
+                android:text="Title: "
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_below="@id/titleTxt"
+                android:fontFamily="@font/open_sans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:textSize="24dp"
+
+                />
+
+            <TextView
+                android:layout_below="@+id/Title"
+                android:id="@+id/descTxt"
+                android:fontFamily="@font/open_sans_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Description: "
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:id="@+id/desc"
+                android:fontFamily="@font/open_sans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:textSize="24dp"
+                android:layout_below="@+id/descTxt"
+                android:layout_marginBottom="20dp"
+                />
+
+
+        </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>
